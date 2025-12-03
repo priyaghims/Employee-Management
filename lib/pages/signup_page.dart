@@ -81,10 +81,11 @@ class _SignUpPageState extends State<SignUpPage> {
               padding: const EdgeInsets.all(24),
               child: Form(
                 key: _formKey,
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
+                child: SingleChildScrollView(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
                     Text(
                       'Sign up as admin',
                       style: Theme.of(context).textTheme.titleLarge,
@@ -186,6 +187,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     ),
                   ],
                 ),
+              ),
               ),
             ),
           ),
